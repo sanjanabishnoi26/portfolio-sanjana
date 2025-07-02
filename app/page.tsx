@@ -62,7 +62,7 @@ export default function HomePage() {
                 href="#contact"
                 className="px-6 py-3 rounded-full text-orange-600 dark:text-orange-400 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#121212] dark:to-[#1e1e1e] p-6  border  dark:border-gray-800 border-orange-200  hover:bg-orange-50 dark:hover:bg-gray-700 transition-all font-medium shadow-sm hover:shadow-md"
               >
-                Let's Collaborate
+                Let&apos;s Collaborate
               </a>
             </div>
           </div>
