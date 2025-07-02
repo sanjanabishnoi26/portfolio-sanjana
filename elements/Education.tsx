@@ -25,15 +25,15 @@ export function EducationTimeline() {
     },
     {
       year: "2019 - 2021",
-      institution: "Delhi Public School",
+      institution: "R.K Paradise Academy ",
       degree: "Higher Secondary",
       field: "Science with Computer",
       board: "RBSE",
       icon: <IconBook className="w-5 h-5" />,
       highlights: [
-        "Computer Science Topper",
-        "Design Club President",
-        "National Design Competition Winner"
+        "Drawing and sketching competition winner",
+        "Active in all competition ",
+        "Topper in Maths "
       ]
     },
     {
@@ -44,12 +44,12 @@ export function EducationTimeline() {
       board: "RBSE",
       icon: <IconCertificate className="w-5 h-5" />,
       highlights: [
-        "Art & Design Excellence Award",
+        "Hosted a program ",
         "Early Interest in Digital Design",
         "Creative Writing Honors"
       ]
     }
-  ];
+];
 
   return (
     <section className="relative py-20 px-4 sm:px-6 md:px-10 bg-gradient-to-br from-[#fef6f1] via-white to-[#fdf2e9] dark:from-[#0a0a0a] dark:via-[#111111] dark:to-[#1a1a1a] overflow-hidden">
