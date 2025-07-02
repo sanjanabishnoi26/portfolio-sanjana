@@ -8,11 +8,13 @@ import {
   IconTerminal2,
   IconBrandLinkedin,
   IconBrandFigma,
+  IconBrandBehance,
   
 } from "@tabler/icons-react";
 import { User } from "@deemlol/next-icons";
 import { Briefcase } from "@deemlol/next-icons";
 import { FileText } from "@deemlol/next-icons";
+
 
 export function Header() {
   const links = [
@@ -21,7 +23,7 @@ export function Header() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
@@ -29,14 +31,14 @@ export function Header() {
       icon: (
         <User className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/about",
     },
     {
       title: "My Work",
       icon: (
         <Briefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/work",
     },
     
     {
@@ -44,7 +46,7 @@ export function Header() {
       icon: (
         <FileText className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://drive.google.com/file/d/1bOEMu8Qi_r0zEjT_ho4OnCh90N2yRsjj/view?usp=drivesdk",
     },
 
     {
@@ -52,20 +54,20 @@ export function Header() {
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/sanjana-bishnoi-72847a277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
-      title: "Figma",
+      title: "Behance",
       icon: (
-        <IconBrandFigma className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandBehance className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.behance.net/sanjanabishnoi26",
     },
   ];
   return (
     <div className="flex items-center justify-center  w-full">
       <FloatingDock
-        mobileClassName="translate-y-20" 
+        mobileClassName="bottom-4 right-4" 
         items={links}
       />
     </div>

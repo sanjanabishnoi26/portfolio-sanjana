@@ -5,7 +5,7 @@
  **/
 
 import { cn } from "@/lib/utils";
-
+import Link from 'next/link'
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { usePathname } from "next/navigation";
 import {
@@ -47,7 +47,7 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+     <div className={cn("fixed bottom-5 right-5 z-50 block md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -71,13 +71,11 @@ const FloatingDockMobile = ({
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
-                <a
-                  href={item.href}
-                  key={item.title}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900"
-                >
-                  <div className="h-4 w-4">{item.icon}</div>
-                </a>
+                <Link href={item.href} key={item.title}
+               className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900"
+                 >
+                     <div className="h-4 w-4">{item.icon}</div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -85,9 +83,9 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800"
+        className="flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-neutral-800 hover:bg-orange-600 hover:textwhite"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 hover:text-white dark:text-neutral-400" />
       </button>
     </div>
   );
@@ -102,14 +100,13 @@ const FloatingDockDesktop = ({
 }) => {
   const mouseX = useMotionValue(Infinity);
   return (
-    <motion.div
-      onMouseMove={(e) => mouseX.set(e.pageX)}
-      onMouseLeave={() => mouseX.set(Infinity)}
-      className={cn(
-        "mx-auto fixed top-[10%]  hidden h-16 items-end gap-4 rounded-2xl bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
-        className,
-      )}
-    >
+   <motion.div
+ onMouseMove={(e) => mouseX.set(e.pageX)}
+      onMouseLeave={() => mouseX.set(Infinity)}  className={cn(
+    "z-50 fixed top-[10%] mx-auto hidden h-16 items-end gap-4 rounded-2xl bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
+    className,
+  )}
+>
       {items.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
       ))}
@@ -169,7 +166,7 @@ const isActive = pathName === href;
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href}>
+    <Link href={href}>
      
       <motion.div
   ref={ref}
@@ -205,6 +202,6 @@ const isActive = pathName === href;
   </motion.div>
 </motion.div>
 
-    </a>
+    </Link>
   );
 }
