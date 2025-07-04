@@ -2,6 +2,8 @@
 import React from "react";
 import { FlipWords } from "../components/ui/flip-words";
 import { Achievements } from "@/elements/Achievements";
+import Link from "next/link";
+
 
 
 export default function HomePage() {
@@ -52,12 +54,12 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a
-                href="#portfolio"
-                className="px-6 py-3 rounded-full text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 transition-all font-medium shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95"
-              >
-                View My Work
-              </a>
+              <Link
+              href="/work"
+              className="px-6 py-3 rounded-full text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 transition-all font-medium shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95">
+              View My Work
+              </Link>
+
               <a
                 href="#contact"
                 className="px-6 py-3 rounded-full text-orange-600 dark:text-orange-400 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#121212] dark:to-[#1e1e1e] p-6  border  dark:border-gray-800 border-orange-200  hover:bg-orange-50 dark:hover:bg-gray-700 transition-all font-medium shadow-sm hover:shadow-md"
