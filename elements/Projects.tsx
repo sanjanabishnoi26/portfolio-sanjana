@@ -8,7 +8,7 @@ import Link from "next/link";
 export function Project() {
   const tabs = [
   {
-    title: "Case Study",
+    title: "Casestudy",
     value: "case-study",
     icon: <IconLayoutGrid className="w-5 h-5" />,
     content: (
@@ -24,8 +24,8 @@ export function Project() {
     ),
   },
   {
-    title: "Prototypes",
-    value: "prototypes",
+    title: "Prototype",
+    value: "prototype",
     icon: <IconBrush className="w-5 h-5" />,
     content: (
       <ContentBlock title="Posite – India Post App Redesign">
@@ -40,7 +40,7 @@ export function Project() {
     ),
   },
   {
-    title: "FreeLancing",
+    title: "Freelancing",
     value: "freelance",
     icon: <IconRocket className="w-5 h-5" />,
     content: (
