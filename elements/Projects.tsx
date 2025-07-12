@@ -8,8 +8,8 @@ import Link from "next/link";
 export function Project() {
   const tabs = [
   {
-    title: "Web Design",
-    value: "web-design",
+    title: "Case Study",
+    value: "case-study",
     icon: <IconLayoutGrid className="w-5 h-5" />,
     content: (
       <ContentBlock title="BhoomiSetu">
@@ -18,14 +18,14 @@ export function Project() {
           description="A clean, responsive platform enabling Indian farmers to directly connect with urban buyers. Designed to cut out middlemen, build trust, and modernize agri-commerce with a touch of cultural sensitivity."
           category="Web Design"
           image="https://i.postimg.cc/nhk0h7jc/Screenshot-2025-05-29-132749.png"
-          href="#"
+          href="https://www.behance.net/gallery/230121905/Bhoomisetu"
         />
       </ContentBlock>
     ),
   },
   {
-    title: "Branding",
-    value: "branding",
+    title: "Prototypes",
+    value: "prototypes",
     icon: <IconBrush className="w-5 h-5" />,
     content: (
       <ContentBlock title="Posite – India Post App Redesign">
@@ -34,14 +34,14 @@ export function Project() {
           description="An intuitive app redesign for India Post with real-time tracking, dual-mode access for users and staff, and a sleek interface that brings clarity and speed to everyday postal tasks."
           category="App Design"
           image="https://i.postimg.cc/8z9sWXry/Screenshot-2025-05-29-014740.png"
-            href="#"
+            href="https://www.figma.com/proto/bnciN1bBlvuOZMJ1GGQpj6/POSTIE?page-id=0%3A1&node-id=1-221&p=f&viewport=173%2C275%2C0.15&t=S7TqlbllLHlFW0tp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A13"
         />
       </ContentBlock>
     ),
   },
   {
-    title: "Prototypes",
-    value: "prototypes",
+    title: "FreeLancing",
+    value: "freelance",
     icon: <IconRocket className="w-5 h-5" />,
     content: (
       <ContentBlock title="MidCity – Hotel Website Experience">
@@ -50,7 +50,7 @@ export function Project() {
           description="A visually rich hotel website concept with smooth animations, seamless room booking, and a modern design built to impress and convert visitors into bookings."
           category="Web Design"
           image="https://i.postimg.cc/xdjYXK6s/Screenshot-2025-05-29-014051.png"
-            href="#"
+            href="https://hotelsonipalace.com/"
         />
       </ContentBlock>
     ),
