@@ -122,7 +122,7 @@ export function Footer() {
             {new Date().getFullYear()} Sanjana Bishnoi. All rights reserved.
           </p>
           <p className="text-xs text-neutral-500 dark:text-neutral-500">
-            Crafted with passion by Indian
+            Crafted with passion by Indian ❤️
           </p>
         </div>
 {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */}
