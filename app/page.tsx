@@ -23,7 +23,7 @@ export default function HomePage() {
             <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 opacity-70 blur-md group-hover:opacity-90 transition-all duration-300"></div>
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
               <img 
-                src="https://i.postimg.cc/yYMbSSHC/Whats-App-Image-2025-06-28-at-02-12-52-d2881d12.jpg" 
+                src="https://res.cloudinary.com/dniqehvdx/image/upload/v1752391715/sanjana_qpduyj.png" 
                 alt="Sanjana Bishnoi"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
